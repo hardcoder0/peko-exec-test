@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if test -f "../res/peko_exec"; then
+  ../res/peko_exec
+else
+  clang ../res/peko.ll ../res/strcat.c -o ../res/peko_exec
+fi
